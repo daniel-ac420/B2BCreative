@@ -1,0 +1,255 @@
+.header {
+	padding: 25px 0;
+	font-size: 14px;
+	background: #010e0f;
+}
+
+.header-inner {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+}
+
+.logo-wrapper {
+	display: flex;
+	align-items: center;
+	gap: 25px;
+}
+
+.logo {
+	display: inline-block;
+	width: 199px;
+	height: 51px;
+	background-image: url("../images/header/logo.svg");
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	transition: all 0.75s;
+}
+
+.logo:hover {
+	filter: brightness(1.25);
+    transform: scale(1.05);
+}
+
+.logo:focus {
+	filter: brightness(1.25);
+    transform: scale(1.1);
+}
+
+.tagline {
+	max-width: 200px;
+	color: #e5c97b;
+}
+
+.header-contacts {
+	display: flex;
+	gap: 74px;
+}
+
+.menu-navigation__list {
+	display: flex;
+	align-items: center;
+	gap: 20px;
+}
+
+.menu-navigation__item {
+    line-height: 0;
+	transition: all 0.5s;
+}
+
+.menu-navigation__item:hover {
+	transform: scale(1.2);
+}
+
+.menu-navigation__link {
+	display: inline-block;
+	width: 40px;
+	height: 40px;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+}
+
+.menu-navigation__link--youtube {
+	background-image: url("../images/header/icons/header--icon--youtube.svg");
+}
+
+.menu-navigation__link--youtube:hover {
+	background-image: url("../images/header/icons-hover/header--icon--hover--youtube.svg");
+}
+
+.menu-navigation__link--telegram {
+	background-image: url("../images/header/icons/header--icon--telegram.svg");
+}
+
+.menu-navigation__link--telegram:hover {
+	background-image: url("../images/header/icons-hover/header--icon--hover--telegram.svg");
+}
+
+.menu-navigation__link--vk {
+	background-image: url("../images/header/icons/header--icon--vk.svg");
+}
+
+.menu-navigation__link--vk:hover {
+	background-image: url("../images/header/icons-hover/header--icon--hover--vk.svg");
+}
+
+.email-wrapper--title {
+	line-height: 1.4;
+	color: #767676;
+}
+
+.header-contacts-wrapper--link {
+	display: inline-block;
+	padding-bottom: 3px;
+	line-height: 1.4;
+	color: var(--colorGold);
+	border-bottom: 1px dashed var(--colorGold);
+	transition: all 0.75s;
+}
+
+.header-contacts-wrapper--link:hover {
+	filter: brightness(1.15);
+}
+
+.phone-wrapper {
+	text-align: right;
+}
+
+.phone-wrapper--link {
+	display: block;
+	font-family: "Oranienbaum", serif;
+	font-size: 20px;
+	line-height: 1.2;
+	letter-spacing: 1px; 
+}
+
+.phone-wrapper .header-contacts-wrapper--link {
+	line-height: 1.3;
+}
+
+.phone-wrapper--link:hover {
+	color: var(--colorGold);
+}
+
+.mobile-menu-button {
+    position: relative;
+    display: none;
+    align-self: center;
+    margin-right: auto;
+    width: 40px;
+    height: 20px;
+    border-top: 2px solid var(--colorGold);
+    border-bottom: 2px solid var(--colorGold);
+    cursor: pointer;
+    transition: all 0.75s;
+}
+
+.mobile-menu-button::after {
+    display: block;
+    width: 40px;
+    height: 2px;
+    content: "";
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: var(--colorGold);
+}
+
+
+
+@media (max-width: 1280px) {
+	
+	.header-contacts {
+		gap: 30px;
+	}
+
+	.tagline {
+		font-size: 12px;
+	}
+
+	.phone-wrapper--link {
+		font-size: 18px;
+	}
+	
+}
+/* ↑↑↑ 1280px ↑↑↑ */
+	
+
+
+@media (max-width: 1024px) {
+	
+	.mobile-menu-button {
+		display: block;
+	}
+	
+	.header-inner {
+		align-items: center;
+	}
+
+	.email-wrapper {
+		display: none;
+	}
+
+	.phone-wrapper {
+		display: none;
+	}
+	
+	.header-contacts {
+		gap: 70px;
+	}
+	
+}
+/* ↑↑↑ 1024px ↑↑↑ */
+
+
+
+@media (max-width: 768px) {
+
+	.header-contacts {
+		gap: 40px;
+	}
+
+}
+/* ↑↑↑ 768px ↑↑↑ */
+
+
+
+@media (max-width: 534px) {
+		
+	.menu-navigation {
+		display: none;
+	}
+	
+}
+/* ↑↑↑ 534px ↑↑↑ */
+
+
+
+@media (max-width: 480px) {
+	
+	.tagline {
+		display: none;
+	}
+	
+}
+/* ↑↑↑ 480px ↑↑↑ */
+
+
+@media (max-width: 375px) {
+	
+
+	
+}	
+/* ↑↑↑ 375px ↑↑↑ */
+		
+
+@media (max-width: 320px) {
+	
+
+	
+}
+/* ↑↑↑ 320px ↑↑↑ */
